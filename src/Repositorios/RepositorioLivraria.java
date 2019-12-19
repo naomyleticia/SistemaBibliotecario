@@ -6,21 +6,47 @@ import Modelos.Bibliotecario;
 import Modelos.Livro;
 
 public class RepositorioLivraria implements InterfaceBiblioteca {
-	
+
 	ArrayList<Livro> listaLivros = new ArrayList<Livro>();
+
 	@Override
 	public boolean AdicionarLivro(Livro livro) {
-		if(livro==livro) {
+		if (livro == livro) {
 			listaLivros.add(livro);
-			System.out.println("livro "+livro.getTitulo()+" cadastrado com sucesso");
+			System.out.println("livro " + livro.getTitulo() + " cadastrado com sucesso");
 			return true;
 		}
 		return false;
 	}
 
 	@Override
-	public boolean deletarLivro(long id) {
-		// TODO Auto-generated method stub
+	public boolean deletarLivro(int id) {
+		for (int i = 0; i < listaLivros.size(); i++) {
+			if (listaLivros.get(i).getId() == id) {
+				listaLivros.remove(i);
+				System.out.println("EXCLUIDO COM SUCESSO");
+				return true;
+			}
+		}
+		return false;
+
+	}
+
+	@Override
+	public void buscarLivro(int id) {
+		for (int i = 0; i < listaLivros.size(); i++) {
+
+			System.out.println("nome: " + listaLivros.get(i).getTitulo());
+
+		}
+	}
+
+	@Override
+	public boolean Listar() {
+		for (Livro s : listaLivros) {
+			System.out.println(s);
+			return true;
+		}
 		return false;
 	}
 
@@ -41,5 +67,11 @@ public class RepositorioLivraria implements InterfaceBiblioteca {
 		// TODO Auto-generated method stub
 		return false;
 	}
-	
+
+	@Override
+	public boolean deletarLivro(long id) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
 }

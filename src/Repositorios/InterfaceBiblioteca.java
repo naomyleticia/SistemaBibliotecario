@@ -12,4 +12,7 @@ public interface InterfaceBiblioteca {
 	public ArrayList<Livro> listarLivros();
 	public boolean alterarLivro(Livro livro);
 	boolean AdicionarLivro(Livro livro);
+	boolean deletarLivro(int id);
+	void buscarLivro(int id);
+	boolean Listar();
 }
