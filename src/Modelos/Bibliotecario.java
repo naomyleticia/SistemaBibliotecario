@@ -1,3 +1,4 @@
+package Modelos;
 import java.util.ArrayList;
 
 public class Bibliotecario {
@@ -5,11 +6,12 @@ public class Bibliotecario {
 	private String nome;
 	private String email;
 	private String senha;
-	ArrayList<Livro> livros;
 	
-	public Bibliotecario() {
+	public Bibliotecario(String nome , String email, String senha) {
 		super();
-		// TODO Auto-generated constructor stub
+		this.nome=nome;
+		this.email=email;
+		this.senha=senha;
 	}
 
 	public String getNome() {
@@ -34,14 +36,6 @@ public class Bibliotecario {
 
 	public void setSenha(String senha) {
 		this.senha = senha;
-	}
-
-	public ArrayList<Livro> getLivros() {
-		return livros;
-	}
-
-	public void setLivros(ArrayList<Livro> livros) {
-		this.livros = livros;
 	}
 	
 	
