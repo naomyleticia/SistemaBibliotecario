@@ -1,5 +1,6 @@
 package Principal;
 
+import Modelos.Livro;
 import Repositorios.RepositorioLivraria;
 
 public class AppLivraria {
@@ -7,8 +8,10 @@ public class AppLivraria {
 		//ainda não fiz testes pois só fiz o metodo add , quando fizer o listar ja é possivel testar melhor.
 		
 		RepositorioLivraria livro = new RepositorioLivraria();
-	
-		livro.AdicionarLivro("orca");
+		Livro livro1 = new Livro();
+		livro1.setTitulo("orca");
+		livro.AdicionarLivro(livro1);
 		
 	}
+	
 }
