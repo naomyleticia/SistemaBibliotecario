@@ -9,7 +9,7 @@ public class RepositorioLivraria implements InterfaceBiblioteca {
 	
 	ArrayList<Livro> listaLivros = new ArrayList<Livro>();
 	@Override
-	public boolean salvarLivro(Livro livro) {
+	public boolean AdicionarLivro(Livro livro) {
 		if(livro==livro) {
 			listaLivros.add(livro);
 			System.out.println("livro "+livro.getTitulo()+" cadastrado com sucesso");
@@ -32,6 +32,12 @@ public class RepositorioLivraria implements InterfaceBiblioteca {
 
 	@Override
 	public boolean alterarLivro(Livro livro) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean salvarLivro(Livro livro) {
 		// TODO Auto-generated method stub
 		return false;
 	}

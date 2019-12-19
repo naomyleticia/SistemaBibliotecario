@@ -11,4 +11,5 @@ public interface InterfaceBiblioteca {
 	public boolean deletarLivro(long id);
 	public ArrayList<Livro> listarLivros();
 	public boolean alterarLivro(Livro livro);
+	boolean AdicionarLivro(Livro livro);
 }
