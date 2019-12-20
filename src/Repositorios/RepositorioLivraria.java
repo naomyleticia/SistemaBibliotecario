@@ -41,6 +41,7 @@ public class RepositorioLivraria implements InterfaceBiblioteca {
 		}
 	}
 
+	// To-Do esse lista não esta funcionando corretamente
 	@Override
 	public boolean Listar() {
 		for (Livro s : listaLivros) {
@@ -64,12 +65,6 @@ public class RepositorioLivraria implements InterfaceBiblioteca {
 
 	@Override
 	public boolean salvarLivro(Livro livro) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	@Override
-	public boolean deletarLivro(long id) {
 		// TODO Auto-generated method stub
 		return false;
 	}
