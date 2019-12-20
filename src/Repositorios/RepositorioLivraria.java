@@ -69,4 +69,10 @@ public class RepositorioLivraria implements InterfaceBiblioteca {
 		return false;
 	}
 
+	@Override
+	public boolean deletarLivro(long id) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
 }
