@@ -11,12 +11,7 @@ public class AppLivraria {
 		RepositorioLivraria livro = new RepositorioLivraria();
 
 		Livro livro1 = new Livro();
-		livro1.setTitulo("orca");
-		livro1.setId(2);
-		livro.AdicionarLivro(livro1);
-		//livro.deletarLivro(2);
-		livro.buscarLivro(2);
-		livro.Listar();
+
 
 	}
 
